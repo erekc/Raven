@@ -1,0 +1,3 @@
+TODO:
+- Figure out linking problem for test in jewels and stones.
+- Finish implementing test cases with gtest with jewels and stones.
