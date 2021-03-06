@@ -6,3 +6,6 @@ protected:
     JewelsAndStones jewels_and_stones = JewelsAndStones();
 };
 
+TEST_F(JewelsAndStonesTest, Case1) {
+    EXPECT_EQ(1, 1);
+}
