@@ -3,7 +3,9 @@
 void JewelsAndStones::read_input(std::string filename) {
     this->input_file.open(filename);
     if (this->input_file.is_open()) {
-        std::cout << "File is open" << std::endl;
+        std::getline(this->input_file, this->jewels);
+        std::getline(this->input_file, this->stones);
+        std::cout << "Jewels: " << this->jewels << ", Stones: " << this->stones << std::endl;
         this->input_file.close();
     }
     else std::cout << "Unable to open file" << std::endl;
@@ -22,12 +24,14 @@ void JewelsAndStones::solve() {
     }
 }
 
-void JewelsAndStones::hello() {
-    std::cout << "Welcome to Jewels And Stones" << std::endl;
-}
-
 int JewelsAndStones::jewels_and_stones(std::string jewels, std::string stones) {
-    return 0;
+    int numJewels = 0;
+    for (int i = 0; i < stones.length(); i++) {
+        if (jewels.find(stones[i]) != std::string::npos) {
+            numJewels++;
+        }
+    }
+    return numJewels;
 }
 
 int main() {
