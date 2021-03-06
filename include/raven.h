@@ -11,7 +11,7 @@ using namespace std;
 class Raven {
 public:
     virtual void solve() = 0;
-    virtual void read_input() = 0;
+    virtual void read_input(string filename) = 0;
 
 protected:
     ofstream input_file;

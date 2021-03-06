@@ -7,6 +7,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 add_subdirectory(libs/googletest)
 
 add_executable(raven src/main.cpp)
+add_executable(jewels_and_stones src/jewels_and_stones.cpp include/jewels_and_stones.h)
 add_executable(raven_utest test/utest.cpp)
 
 target_link_libraries(raven_utest gtest_main)
