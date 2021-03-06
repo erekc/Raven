@@ -14,7 +14,7 @@ public:
     virtual void read_input(string filename) = 0;
 
 protected:
-    ofstream input_file;
+    ifstream input_file;
 };
 
 #endif //RAVEN_RAVEN_H
