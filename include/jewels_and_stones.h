@@ -7,6 +7,10 @@ class JewelsAndStones: public Raven {
 public:
     void solve() override;
     void read_input(std::string filename) override;
+    void set_jewels(std::string jewels) { this->jewels = jewels; }
+    std::string get_jewels() { return this->jewels; }
+    void set_stones(std::string stones) { this->stones = stones; }
+    std::string get_stones() { return this->stones; }
 private:
     int jewels_and_stones(std::string jewels, std::string stones);
     std::string jewels;
