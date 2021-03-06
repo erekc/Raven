@@ -1,0 +1,4 @@
+TODO:
+- Figure out linking problem for test in jewels and stones.
+- Finish implementing test cases with gtest with jewels and stones.
+    - Look into friend classes (ways to access getters & setters for tests)
