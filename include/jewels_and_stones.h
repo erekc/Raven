@@ -6,11 +6,12 @@
 class JewelsAndStones: public Raven {
 public:
     void solve() override;
-    void read_input(string filename) override;
+    void read_input(std::string filename) override;
     void hello();
 private:
-    string jewels;
-    string stones;
+    int jewels_and_stones(std::string jewels, std::string stones);
+    std::string jewels;
+    std::string stones;
 };
 
 #endif //RAVEN_JEWELS_AND_STONES_H
