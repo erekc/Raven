@@ -13,11 +13,10 @@ void JewelsAndStones::read_input(std::string filename) {
 
 void JewelsAndStones::solve() {
     std::cout << "This is the solve function for Jewels and Stones" << std::endl;
-    int output;
     if (this->jewels.length() > 0 && this->stones.length() <= 50) {
-        output = this->jewels_and_stones(this->jewels, this->stones);
+        this->output = this->jewels_and_stones(this->jewels, this->stones);
         std::cout << "Input: jewels = \"" << this->jewels << "\", stones = \"" << this->stones << "\"" << std::endl;
-        std::cout << "Output: " << output << std::endl;
+        std::cout << "Output: " << this->output << std::endl;
     }
     else {
         std::cout << "Input couldn't be resolved." << std::endl;
