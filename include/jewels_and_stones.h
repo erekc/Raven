@@ -3,7 +3,7 @@
 
 #include "raven.h"
 
-class JewelsAndStones: public Raven {
+class JewelsAndStones: public Raven<int> {
 public:
     void solve() override;
     void read_input(std::string filename) override;
