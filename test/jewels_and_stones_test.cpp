@@ -7,5 +7,8 @@ protected:
 };
 
 TEST_F(JewelsAndStonesTest, Case1) {
-    EXPECT_EQ(1, 1);
+    jewels_and_stones.set_jewels("aA");
+    jewels_and_stones.set_stones("aAAbbbb");
+    jewels_and_stones.solve();
+    EXPECT_EQ(3, jewels_and_stones.get_output());
 }

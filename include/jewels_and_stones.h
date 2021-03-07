@@ -11,6 +11,7 @@ public:
     std::string get_jewels() { return this->jewels; }
     void set_stones(std::string stones) { this->stones = stones; }
     std::string get_stones() { return this->stones; }
+    int get_output() { return this->output; }
 private:
     int jewels_and_stones(std::string jewels, std::string stones);
     std::string jewels;
