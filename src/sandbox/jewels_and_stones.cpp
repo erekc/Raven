@@ -1,4 +1,4 @@
-#include "../include/jewels_and_stones.h"
+#include "../../include/jewels_and_stones.h"
 
 void JewelsAndStones::read_input(std::string filename) {
     this->input_file.open(filename);
@@ -32,10 +32,4 @@ int JewelsAndStones::jewels_and_stones(std::string jewels, std::string stones) {
         }
     }
     return numJewels;
-}
-
-int main() {
-    JewelsAndStones jewelsAndStones;
-    jewelsAndStones.read_input("../input/jewels_and_stones.txt");
-    jewelsAndStones.solve();
 }
