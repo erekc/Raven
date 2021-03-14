@@ -1,4 +1,5 @@
 TODO:
 - In README.md describe the structure of the project including how new problems are added.
 - Create bash script to easily add a new problem.
+- Read more about 'const' specifier.
 - Add more test cases for jewels and stones maybe?
