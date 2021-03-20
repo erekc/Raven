@@ -10,8 +10,4 @@ add_executable(raven src/main/main.cpp)
 add_executable(raven_utest test/utest.cpp)
 target_link_libraries(raven_utest gtest_main)
 
-add_executable(jewels_and_stones src/main/jewels_and_stones_main.cpp src/sandbox/jewels_and_stones.cpp)
-add_executable(jewels_and_stones_test test/jewels_and_stones_test.cpp src/sandbox/jewels_and_stones.cpp)
-target_link_libraries(jewels_and_stones_test gtest_main)
-
 target_compile_options(raven PRIVATE -g -Wall -Wextra)
