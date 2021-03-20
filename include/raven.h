@@ -11,6 +11,7 @@ class Raven {
 public:
     virtual void solve() = 0;
     virtual void read_input(std::string filename) = 0;
+    T get_output() { return output; }
 protected:
     std::ifstream input_file;
     T output;
