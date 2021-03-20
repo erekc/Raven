@@ -10,4 +10,8 @@ add_executable(raven src/main/main.cpp)
 add_executable(raven_utest test/utest.cpp)
 target_link_libraries(raven_utest gtest_main)
 
+add_executable(hello src/main/hello_main.cpp src/sandbox/hello.cpp)
+add_executable(hello_utest test/hello_test.cpp src/sandbox/hello.cpp)
+target_link_libraries(hello_utest gtest_main)
+
 target_compile_options(raven PRIVATE -g -Wall -Wextra)
